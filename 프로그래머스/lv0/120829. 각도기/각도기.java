@@ -1,6 +1,8 @@
 class Solution {
     public int solution(int angle) {
         int answer = 0;
+        
+        //조건 줄여 나가기
         if(0<angle & angle<90){
             answer = 1;
         } else if(angle ==90){
