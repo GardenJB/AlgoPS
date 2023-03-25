@@ -2,6 +2,7 @@ class Solution {
     public int solution(int price) {
         int answer = 0;
         if(price >=500000)
+            //answer = (int) (price*0.8);
             answer = price * 8/10;
         else if(price >= 300000)
             answer = price * 9/10;
