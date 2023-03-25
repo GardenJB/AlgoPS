@@ -13,8 +13,6 @@ class Solution {
         // }
         
         String n = String.valueOf(num);
-        
-        System.out.println(n);
         answer = n.indexOf(String.valueOf(k))>=0? n.indexOf(String.valueOf(k))+1 : -1;
         return answer;
     }
