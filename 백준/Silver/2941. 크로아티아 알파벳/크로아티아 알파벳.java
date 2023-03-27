@@ -6,7 +6,7 @@ public class Main {
 		
 		String st = sc.next();
 		
-		//*****
+		//string.replaceAll("","")용법 주의*****
 		st=st.replaceAll("c=|c-|dz=|d-|lj|nj|s=|z=", "1");
 		
 		int ans = st.length();
