@@ -9,6 +9,7 @@ public class Main {
 		for(int i=0; i<10; i++) {
 			int temp = sc.nextInt();
 			sum+=temp;
+			//합이 100 초과 시점 멈추고 비교
 			if(sum>100) {
 				max_s = sum-100<= 100-(sum-temp) ? sum : sum-temp;
 				break;
