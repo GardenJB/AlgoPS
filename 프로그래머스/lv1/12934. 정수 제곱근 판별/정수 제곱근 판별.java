@@ -21,7 +21,7 @@ class Solution {
 // 			answer = -1;
 // 		}
         
-        //시간 초과 *** 형변환, 다른 변수 활용 w??? 
+        //시간 초과*** 형변환 **** answer이 long인데 변수들은 int로 활용해서...
         
         // long answer = 0;
         // int i=1;
