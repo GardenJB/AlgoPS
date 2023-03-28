@@ -6,6 +6,7 @@ class Solution {
         long answer = 0;
         String st = n+"";
         String[] arr = st.split("");
+        //내림차순 +import ****
         Arrays.sort(arr, Collections.reverseOrder());
         st = "";
         for(String k : arr) {
@@ -21,6 +22,7 @@ class Solution {
         // for(int k : arr2) {
         //     st+=k;
         // }
+        // answer = (long) Integer.parseInt(st);
         answer = Long.parseLong(st);
         return answer;
     }
