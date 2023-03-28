@@ -1,19 +1,18 @@
 class Solution {
     public int[] solution(int n) {
-        int[] answer1= new int[n];
+        int[] answer;
         int k =0;
+        int[] temp = new int[n];
         for(int i=1; i<=n; i++){
             if(n%i==0){
-                answer1[k]=i;
+                temp[k]=i;
                 k++;
             }
         }
         
-        int[] answer = new int[k];
+        answer = new int[k];
         for(int i=0; i<k; i++){
-            if(answer1[i]!=0){
-                answer[i]=answer1[i];
-            }
+            answer[i]=temp[i];
         }
         
         return answer;
