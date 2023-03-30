@@ -1,4 +1,5 @@
 class Solution {
+    //오버 플로우 방지하기 위해 num 을 long으로 바꿔줘야... 아니면 -1이 아닌 값이 나옴 ***
     public int solution(long num) {
         int answer = 0;
         int cnt=0;
@@ -9,8 +10,10 @@ class Solution {
             } else {
                 num = num*3+1;
             }
+            //수 세는 위치**
             cnt++;
             
+            //부등호 등호*
             if(cnt>500) {
                 cnt=-1;
                 break;
