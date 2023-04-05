@@ -26,6 +26,7 @@ public class Main {
 		int[] dp = new int[k+1];
 		
 		for(int i=0; i<n; i++) {
+			//*****물건을 담는 순서에 주의!! 누적은 중복될 수 있음
 			for(int j=k; j>=0; j--) {
 				//무게 초과
 				if(bag[i][0]+j>k) continue;
