@@ -1,18 +1,17 @@
-import java.util.Scanner;
- 
+import java.util.*;
+
 public class Main {
-	public static void main(String[] args) {		
-		Scanner in = new Scanner(System.in);
- 
-		int N = in.nextInt();
-		String a = in.next();
-		in.close();
-		
-		int sum = 0;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        s=sc.nextLine();
+        char[] arr = s.toCharArray();
         
-		for(int i = 0; i < N; i++) {
-			sum += a.charAt(i)-'0';
-		}
-		System.out.print(sum);
-	}
+        int sum=0;
+        for(char c : arr) {
+            sum+=(int) (c-'0');
+        }
+        
+        System.out.println(sum);
+    }
 }
