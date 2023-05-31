@@ -19,10 +19,13 @@ public class Main {
         //div의 약수 구하기
 		for(long m=1; m<=Math.sqrt(div); m++) {
 			if(div%m==0) {
-				if(n%m==r) sum+=m;
+                //n%m=r
+                if(m>r) sum+=m;
+				//if(n%m==r) sum+=m;
 				long pair = div/m;
 				//System.out.println(pair);
-				if(pair !=m && n%pair==r) sum+=pair;
+                if(pair !=m && pair>r) sum+=pair;
+				//if(pair !=m && n%pair==r) sum+=pair;
 			}
 		}
 		
